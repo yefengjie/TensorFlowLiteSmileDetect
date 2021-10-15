@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".SmilePredictActivity"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="原始图片" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="预处理后图片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/normal" />
+
+        <ImageView
+            android:id="@+id/ivPreprocessNormal"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            tools:src="@mipmap/normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvResultNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预测结果: 未开始"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="原始图片" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="预处理后图片" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/smiles" />
+
+        <ImageView
+            android:id="@+id/ivPreprocessSmile"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            tools:src="@mipmap/smiles" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvResultSmile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预测结果: 未开始"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="开始推理" />
+</androidx.appcompat.widget.LinearLayoutCompat>
