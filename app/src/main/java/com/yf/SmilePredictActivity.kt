@@ -66,6 +66,7 @@ class SmilePredictActivity : AppCompatActivity() {
         mBinding.btnStart.setOnClickListener {
             start(R.mipmap.normal, mBinding.ivPreprocessNormal, mBinding.tvResultNormal)
             start(R.mipmap.smiles, mBinding.ivPreprocessSmile, mBinding.tvResultSmile)
+            TfLiteGpuCompare.start(this, mBinding.tvLog)
         }
     }
 
